@@ -172,12 +172,23 @@ a:hover, a:focus {
 	padding: 7vmax;
 }
 
+.title {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.avatar {
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 200px;
+}
+
 .section--right {
 	text-align: right;
 }
 
 .section--intro {
-	background: linear-gradient(90deg, #58A8FB, #465683);
+	background: linear-gradient(20deg, #541388, #d90368);
 }
 
 .section--portraits {
@@ -185,11 +196,11 @@ a:hover, a:focus {
 }
 
 .section--shots {
-	background: linear-gradient(20deg, #D1D7EF, #5C61F5);
+	background: linear-gradient(20deg, #d90368, #f3a712);
 }
 
 .section--cards {
-	background: #FFB8CC;
+	background: #56a3a6;
 }
 
 .section__heading {
@@ -236,7 +247,7 @@ a:hover, a:focus {
 .interval {
 	position: relative;
 	padding: 30vh 20vw;
-	background: #1C222F;
+	background: #2d3047;
 	overflow: hidden;
 }
 
