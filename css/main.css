@@ -1,0 +1,38 @@
+
+.shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.tile {
+  margin: 0px !important;
+}
+
+.green {
+  background-color: #93bb46;
+}
+
+.blue {
+  background-color: #00a2b7;
+}
+
+.darkblue {
+  background-color: #255d69;
+}
+
+.yellow {
+  background-color: #fcca40;
+}
+
+.red {
+  background-color: #f25345;
+}
+
+.orange {
+  background-color: #fa7921;
+}
+
+.avatar {
+	margin: 0 auto;
+	text-align: center;
+  border-radius: 200px;
+}

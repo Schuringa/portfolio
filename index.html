@@ -6,113 +6,47 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Portfolio</title>
-	<meta name="description" content="Decorative &amp; interactive isometric &amp; 3D grids." />
-	<meta name="keywords" content="isometric, grid, images, masonry, perspective" />
-	<meta name="author" content="Codrops" />
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<script src="js/modernizr.custom.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+
+
 </head>
 
-<body class="demo-2">
-	<main>
-		<section class="section section--intro">
-			<div class="title">
-			<img src="../img/avatar.png" height="300" width="300" class="avatar">		
-			<h1>Jordan Schuringa</h1>
-			<p>Under construction</p>
-		</div>
+<body>
+		<section class="section">
+				<div class="container shadow">
+						<div class="tile is-ancestor">
+							<div class="tile">
+									<div class="tile is-parent is-4 green">
+										<img src="../img/avatar.png" height="300" width="300" class="avatar">		
+									</div>
+									<div class="tile is-parent orange">
+										<div class="tile is-child orange">
+											<p class="title">Jordan Schuringa</p>
+											<p class="subtitle">Under construction</p>
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="tile is-ancestor">
+								<div class="tile">
+										<div class="tile is-parent yellow">
+										</div>
+										<div class="tile is-parent blue">
+											<h1>Jordan Schuringa</h1>
+											<p>Under construction</p>
+										</div>
+									</div>
+							</div>
+							<div class="tile is-ancestor">
+									<div class="tile">
+											<div class="tile is-parent red">
+											</div>
+										</div>
+								</div>
 
+				</div>
 		</section>
-		<!--/intro-->
-		<section class="interval">
-		
-		</section>
-		<section class="section section--cards">
-			
-		</section>
-		<section class="interval">
-		
-		</section>
-		<section class="section section--shots section--right">
-		
-		</section>
-		<!-- Related demos -->
-	</main>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/dynamics.min.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/main.js"></script>
-	<script>
-		(function () {
-			function getRandomInt(min, max) {
-				return Math.floor(Math.random() * (max - min + 1)) + min;
-			}
-
-			// new IsoGrid(document.querySelector('.isolayer--deco1'), {
-			// 	transform: 'translateX(33vw) translateY(-340px) rotateX(45deg) rotateZ(45deg)',
-			// 	stackItemsAnimation: {
-			// 		properties: function (pos) {
-			// 			return {
-			// 				translateZ: (pos + 1) * 30,
-			// 				rotateZ: getRandomInt(-4, 4)
-			// 			};
-			// 		},
-			// 		options: function (pos, itemstotal) {
-			// 			return {
-			// 				type: dynamics.bezier,
-			// 				duration: 500,
-			// 				points: [{ "x": 0, "y": 0, "cp": [{ "x": 0.2, "y": 1 }] }, { "x": 1, "y": 1, "cp": [{ "x": 0.3, "y": 1 }] }],
-			// 				delay: (itemstotal - pos - 1) * 40
-			// 			};
-			// 		}
-			// 	}
-			// });
-
-			// new IsoGrid(document.querySelector('.isolayer--deco3'), {
-			// 	transform: 'translateX(40vw) translateY(100px) rotateX(15deg) rotateY(0) rotateZ(40deg)',
-			// 	stackItemsAnimation: {
-			// 		properties: function (pos) {
-			// 			return {
-			// 				rotateY: pos * -15
-			// 			};
-			// 		},
-			// 		options: function (pos, itemstotal) {
-			// 			return {
-			// 				type: dynamics.bezier,
-			// 				duration: 500,
-			// 				points: [{ "x": 0, "y": 0, "cp": [{ "x": 0.2, "y": 1 }] }, { "x": 1, "y": 1, "cp": [{ "x": 0.3, "y": 1 }] }],
-			// 				delay: (itemstotal - pos - 1) * 40
-			// 			};
-			// 		}
-			// 	}
-			// });
-
-			// new IsoGrid(document.querySelector('.isolayer--deco4'), {
-			// 	perspective: 3000,
-			// 	transform: 'translate3d(-200px,-200px,0) scale3d(0.8,0.8,1) rotateY(45deg) rotateZ(-10deg)',
-			// 	stackItemsAnimation: {
-			// 		properties: function (pos) {
-			// 			return {
-			// 				rotateX: (pos + 1) * -15
-			// 			};
-			// 		},
-			// 		options: function (pos, itemstotal) {
-			// 			return {
-			// 				type: dynamics.spring,
-			// 				delay: (itemstotal - pos - 1) * 30
-			// 			};
-			// 		}
-			// 	},
-			// 	onGridLoaded: function () {
-			// 		classie.add(document.body, 'grid-loaded');
-			// 	}
-			// });
-		})();
-	</script>
 </body>
 
 </html>
