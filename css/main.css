@@ -34,7 +34,7 @@ h3 {
 }
 
 body {
-  background: #1A1A34;
+  background: #0D0D27;
   height: 100vh;
   overflow-x: hidden; 
   overflow-y: hidden;
@@ -220,10 +220,18 @@ html {
   padding-top: 50px;
 }
 
+.vertical-line-static {
+  position: absolute;
+  padding-left: 128px;
+  border-left: 4px solid #FF00E6;
+  height: 500px;
+  opacity: 0.7;
+}
+
 .horizontal-line-static {
   height: 4px;
   background-color: #FF00E6;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .horizontal-line {
@@ -231,7 +239,7 @@ html {
   background-color: #FF00E6;
   animation: moveDown 5s linear infinite;
   margin-bottom: 128px;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 @keyframes moveDown {
