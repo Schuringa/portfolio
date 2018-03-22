@@ -223,7 +223,7 @@ html {
 .horizontal-line-static {
   height: 4px;
   background-color: #FF00E6;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .horizontal-line {
@@ -231,7 +231,7 @@ html {
   background-color: #FF00E6;
   animation: moveDown 5s linear infinite;
   margin-bottom: 128px;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 @keyframes moveDown {
