@@ -3,6 +3,82 @@ a{
   color: inherit !important; /* Inherits color property from its parent */
 }
 
+h1 {
+  display: block;
+  font-size: 12px !important;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+h2 {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+body {
+  background: #00001a;
+  height: 100vh;
+  overflow-x: hidden; 
+  overflow-y: hidden;
+}
+
+html {
+  overflow-x: hidden; 
+  overflow-y: hidden;
+}
+
+.aboutme {
+  position: absolute;
+  display: inline-block;
+  top: 15vh;
+  left: 10vw;
+  width: 350px;
+}
+
+@media (max-width: 576px) {
+  .aboutme {
+    width: 90vw;
+  }
+}
+
+.skills {
+  position: absolute;
+  top: 45vh;
+  left: 10vw;
+  width: 350px;
+  background: black;
+}
+
+.post-thumb {
+  float: left;
+}
+
+.post-thumb img {
+  display: block;
+  padding-right: 10px;
+}
+
+.post-content {
+  margin-left: 200px;
+  padding: 5px 0 0 0;
+  height: 75px;
+}
+
+.avatar {
+  border-radius: 200px;
+}
+
+.links {
+  position: absolute;
+  bottom: 5vh;
+  left: calc(50vw - 77px);
+  z-index: 1;
+}
+
 .border-radius-top {
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -48,6 +124,10 @@ a{
   background-color: #fa7921;
 }
 
+.whitebg {
+  background-color: white;
+}
+
 .white {
   color: white;
 }
@@ -76,8 +156,32 @@ a{
   color: #fa7921;
 }
 
-.avatar {
-	margin: 0 auto;
-	text-align: center;
-  border-radius: 200px;
+.center * {
+  margin: 0 auto;
 }
+
+.sun {
+  width: 300px; 
+  height: 300px;
+  display: block;
+  padding-top: 50px;
+}
+
+.horizontal-line-static {
+  height: 4px;
+  background-color: #FF00E6;
+}
+
+.horizontal-line {
+  height: 4px;
+  background-color: #FF00E6;
+  animation: moveDown 5s linear infinite;
+  margin-bottom: 128px;
+}
+
+@keyframes moveDown {
+to {
+   transform: translate(0, 132px);
+}
+}
+
