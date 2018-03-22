@@ -1,4 +1,9 @@
 
+@font-face {
+  font-family: 'Streamster';
+  src: url('/fonts/Streamster.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+} 
+
 a{
   color: inherit !important; /* Inherits color property from its parent */
 }
@@ -13,7 +18,16 @@ h1 {
 
 h2 {
   display: block;
-  font-size: 11px;
+  font-size: 18px !important;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-family: 'Streamster';
+}
+
+h3 {
+  display: block;
+  font-size: 14px !important;
   letter-spacing: 1px;
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -31,7 +45,7 @@ html {
   overflow-y: hidden;
 }
 
-.aboutme {
+.about {
   position: absolute;
   display: inline-block;
   top: 15vh;
@@ -39,19 +53,58 @@ html {
   width: 350px;
 }
 
-@media (max-width: 576px) {
-  .aboutme {
-    width: 90vw;
-  }
+.aboutme {
+  position: absolute;
+  top: 40vh;
+  left: 10vw;
+  width: 350px;
+  z-index: 1;
 }
+
 
 .skills {
   position: absolute;
-  top: 45vh;
-  left: 10vw;
+  top: 40vh;
+  right: 10vw;
   width: 350px;
-  background: black;
+  z-index: 1;
 }
+
+
+@media (max-width: 576px) {
+  .about {
+    width: 90vw;
+  }
+  .aboutme {
+    width: 90vw;
+    left: 10vw;
+  }
+  .skills {
+    width: 90vw;
+    left: 10vw;
+    top: 60vh;
+    padding-top: 10vh;
+  }
+}
+
+@media (max-width: 870px) {
+  body, html {
+    overflow-y: auto;
+  }
+  .about {
+    width: 90vw;
+  }
+  .aboutme {
+    width: 90vw;
+    left: 10vw;
+  }
+  .skills {
+    width: 90vw;
+    left: 10vw;
+    top: 60vh;
+  }
+}
+
 
 .post-thumb {
   float: left;
@@ -170,6 +223,7 @@ html {
 .horizontal-line-static {
   height: 4px;
   background-color: #FF00E6;
+  opacity: 0.5;
 }
 
 .horizontal-line {
@@ -177,6 +231,7 @@ html {
   background-color: #FF00E6;
   animation: moveDown 5s linear infinite;
   margin-bottom: 128px;
+  opacity: 0.5;
 }
 
 @keyframes moveDown {
