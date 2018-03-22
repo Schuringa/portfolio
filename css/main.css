@@ -34,7 +34,7 @@ h3 {
 }
 
 body {
-  background: #00001a;
+  background: #1A1A34;
   height: 100vh;
   overflow-x: hidden; 
   overflow-y: hidden;
@@ -223,7 +223,7 @@ html {
 .horizontal-line-static {
   height: 4px;
   background-color: #FF00E6;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .horizontal-line {
@@ -231,7 +231,7 @@ html {
   background-color: #FF00E6;
   animation: moveDown 5s linear infinite;
   margin-bottom: 128px;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 @keyframes moveDown {
