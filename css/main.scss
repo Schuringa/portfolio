@@ -1,5 +1,5 @@
 
-$duration: 25;
+$duration: 40;
 $perspective: 100px;
 $angle: 40deg;
 
@@ -158,6 +158,10 @@ h3 {
   color: white;
 }
 
+.whitebg {
+  color: white;
+}
+
 .center * {
   margin: 0 auto;
 }
@@ -232,6 +236,6 @@ to {
 
 @keyframes forward {
   0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(0, 20 * $block_height * 10, 0); }
+  100% { transform: translate3d(0, 8 * $block_height * 10, 0); }
 }
 
