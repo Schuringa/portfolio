@@ -224,7 +224,7 @@ to {
   }
 }
 
-@for $i from 1 through 100 {
+@for $i from 1 through 50 {
   .delay-#{$i} {
     animation-delay: #{-$i * $duration/ 45}s;
   }
