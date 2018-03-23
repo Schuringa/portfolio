@@ -1,13 +1,13 @@
 
-$duration: 6;
+$duration: 25;
 $perspective: 100px;
 $angle: 40deg;
 
 $top: 39%;
 $scale: 0.2;
-$block_width: 28px;
-$block_height: 6px;
-$n_segments: 8;
+$block_width: 20px;
+$block_height: 5px;
+$n_segments: 10;
 $row_size: 10;
 
 html, body {
@@ -195,38 +195,43 @@ to {
 }
 
 .road {
-  width: 70%;
+  width: 68%;
   height: 100%;
   transform: rotate3d(1, 0, 0, $angle) scale3d(0.9, 0.5, 1);
-  .segment {
+  .horizontal-line {
     position: absolute;
     left: 0;
     top: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #FF00E6;
     animation-name: forward;
     animation-duration: #{$duration}s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
-  .block {
-    float: left;
-    width: $block_width;
-    height: $block_height;
-    border-top: 1px solid #FF00E6;
-    border-bottom: 1px solid #FF00E6;
-    border-left: 2px solid #FF00E6;
-    border-right: 2px solid #FF00E6;
-    // box-shadow: -4px 1px 0px 1px rgba(0,0,0,0.35) inset;
+  .vertical1{
+    display:inline-block;
+    border-left: 1px solid #FF00E6;
+    padding-right: 7%;
+    height: 100vh;
+  }
+
+  .vertical1:last-child{
+    border-right: 1px solid #FF00E6;
+    padding-right: 10%;
+    height: 100vh;
   }
 }
 
-@for $i from 1 through $n_segments {
+@for $i from 1 through 100 {
   .delay-#{$i} {
-    animation-delay: #{-$i * $duration/ $n_segments}s;
+    animation-delay: #{-$i * $duration/ 45}s;
   }
 }
 
 @keyframes forward {
   0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(0, $n_segments * $block_height * 8, 0); }
+  100% { transform: translate3d(0, 20 * $block_height * 10, 0); }
 }
 
