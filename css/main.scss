@@ -7,7 +7,7 @@ $top: 39%;
 $scale: 0.2;
 $block_width: 28px;
 $block_height: 6px;
-$n_segments: 10;
+$n_segments: 8;
 $row_size: 10;
 
 html, body {
@@ -16,6 +16,7 @@ html, body {
   width: 100vw;
   overflow: hidden;
   -moz-overflow:hidden;
+  position: relative;
 }
 
 @font-face {
@@ -220,12 +221,12 @@ to {
 
 @for $i from 1 through $n_segments {
   .delay-#{$i} {
-    animation-delay: #{-$i * $duration / $n_segments}s;
+    animation-delay: #{-$i * $duration/ $n_segments}s;
   }
 }
 
 @keyframes forward {
   0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(0, $n_segments * $block_height * 10, 0); }
+  100% { transform: translate3d(0, $n_segments * $block_height * 8, 0); }
 }
 
