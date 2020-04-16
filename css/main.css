@@ -8,7 +8,6 @@ body {
   -moz-overflow: hidden;
   position: relative;
 }
-
 @font-face {
   font-family: 'Streamster';
   src: url('/fonts/Streamster.ttf') format('truetype');
@@ -117,7 +116,9 @@ h3 {
 }
 
 .avatar {
-  border-radius: 200px;
+  border-radius: 100px;
+  height: auto;
+  width: 115px;
 }
 
 .links {
