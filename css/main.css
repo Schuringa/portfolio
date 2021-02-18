@@ -4,7 +4,8 @@ body {
   background: #0d0d27;
   height: 100vh;
   width: 100vw;
-  overflow-y: scroll;
+  min-width: 900px !important;
+  overflow: hidden;
   position: relative;
 }
 @font-face {
@@ -16,6 +17,7 @@ a {
   color: inherit !important;
   /* Inherits color property from its parent */
 }
+
 
 h1 {
   display: block;
@@ -89,39 +91,6 @@ h3 {
   padding: 10px;
 }
 
-@media (max-width: 576px) {
-  .about {
-    width: 90vw;
-  }
-
-  .aboutme {
-    width: 90vw;
-    left: 10vw;
-  }
-
-  .skills {
-    width: 90vw;
-    left: 10vw;
-    top: 60vh;
-    padding-top: 10vh;
-  }
-}
-@media (max-width: 870px) {
-  .about {
-    width: 90vw;
-  }
-
-  .aboutme {
-    width: 90vw;
-    left: 10vw;
-  }
-
-  .skills {
-    width: 90vw;
-    left: 10vw;
-    top: 60vh;
-  }
-}
 .post-thumb {
   float: left;
 }
@@ -171,7 +140,7 @@ h3 {
 }
 
 .whitebg {
-  color: white;
+  min-width: 900px !important;
 }
 
 .center * {
